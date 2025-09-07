@@ -1,0 +1,385 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #8B5CF6, #7C3AED);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.stop-icon {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero p {
+    font-size: 1.3rem;
+    opacity: 0.9;
+}
+
+/* Dangers Section */
+.dangers {
+    background: linear-gradient(135deg, #4C1D95, #6D28D9);
+    padding: 5rem 0;
+    color: white;
+    text-align: center;
+}
+
+.warning-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.dangers h2 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    font-weight: bold;
+}
+
+.danger-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.danger-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 2rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.danger-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.danger-card .icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.danger-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.danger-card p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+/* Facts Section */
+.facts {
+    background: linear-gradient(135deg, #EC4899, #F472B6);
+    padding: 5rem 0;
+    text-align: center;
+    color: white;
+}
+
+.chart-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.facts h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.facts-subtitle {
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
+    opacity: 0.9;
+}
+
+.facts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.fact-card {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 2rem 1.5rem;
+    text-align: center;
+    transition: transform 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.fact-card:hover {
+    transform: scale(1.05);
+}
+
+.percentage {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.fact-card p {
+    font-size: 1rem;
+    line-height: 1.4;
+    opacity: 0.95;
+}
+
+/* Steps Section */
+.steps {
+    background: #f8fafc;
+    padding: 5rem 0;
+    text-align: center;
+}
+
+.steps h2 {
+    font-size: 2.2rem;
+    margin-bottom: 3rem;
+    color: #1e293b;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.steps-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.step-card {
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    text-align: left;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-left: 4px solid #3B82F6;
+}
+
+.step-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.step-number {
+    background: #3B82F6;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.step-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: #1e293b;
+    font-weight: bold;
+}
+
+.step-card p {
+    color: #64748b;
+    line-height: 1.6;
+}
+
+/* Help Section */
+.help {
+    background: linear-gradient(135deg, #1E40AF, #3B82F6);
+    padding: 5rem 0;
+    text-align: center;
+    color: white;
+}
+
+.help-icon {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.help h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.help-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+    opacity: 0.9;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.help-options h3 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+}
+
+.contact-grid {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.contact-item {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 1.5rem 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    transition: transform 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    min-width: 200px;
+    justify-content: center;
+}
+
+.contact-item:hover {
+    transform: scale(1.05);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.contact-icon {
+    font-size: 1.5rem;
+}
+
+.contact-item span:last-child {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* Footer */
+.footer {
+    background: #1e293b;
+    padding: 3rem 0;
+    text-align: center;
+    color: white;
+}
+
+.footer p {
+    margin-bottom: 1rem;
+    opacity: 0.8;
+}
+
+.quote {
+    font-style: italic;
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto;
+    color: #94a3b8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero p {
+        font-size: 1.1rem;
+    }
+    
+    .dangers h2, .facts h2 {
+        font-size: 2rem;
+    }
+    
+    .help h2 {
+        font-size: 2.2rem;
+    }
+    
+    .contact-grid {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+    
+    .contact-item {
+        min-width: 250px;
+    }
+    
+    .danger-grid, .facts-grid, .steps-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .steps h2 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .danger-card, .step-card {
+        padding: 1.5rem;
+    }
+    
+    .fact-card {
+        padding: 1.5rem 1rem;
+    }
+    
+    .help h2 {
+        font-size: 1.8rem;
+    }
+    
+    .contact-item {
+        min-width: 200px;
+        padding: 1rem 1.5rem;
+    }
+}
